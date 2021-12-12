@@ -20,11 +20,11 @@ public class HomeWorkOne {
 
     static void printColor() {
         int value = -5;
-        if (value <= 0) { //если value меньше 0 (0 включительно), то выводитсЯ сообщение ТRedУ
+        if (value <= 0) {
             System.out.println("Red");
-        } else if (0 < value && value <= 100) { //если лежит в пределах от 0 (0 исключительно) до 100 (100 включительно)
+        } else if (0 < value && value <= 100) {
             System.out.println("Yellow");
-        } else if (value > 100) { //если value больше 100 (100 исключительно), то выводитсЯ сообщение ТGreenУ
+        } else if (value > 100) {
             System.out.println("Green");
         }
     }
