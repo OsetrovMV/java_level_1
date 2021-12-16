@@ -22,7 +22,16 @@ public class HomeWorkThird {
     static void changingNumber() {
         int[] numbers = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
         for (int i = 0; i < numbers.length; i++) {
-            System.out.print(((numbers[i] == 1) ? 0 : 1) + " ");
+            System.out.print(numbers[i] + " ");
+        }
+        System.out.println();
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] == 1) {
+                numbers[i] = 0;
+            } else {
+                numbers[i] = 1;
+            }
+            System.out.print(numbers[i] + " ");
         }
     }
 
@@ -57,11 +66,12 @@ public class HomeWorkThird {
         }
     }
 
-    static void acceptsTwoElements(int len, int initialValue) {
+    static int [] acceptsTwoElements(int len, int initialValue) {
         int [] arr = new int [len];
         for (int i = 0; i < len; i++) {
             arr [i] = initialValue;
             System.out.print(arr[i] + " ");
         }
-    }
+        return arr;
+    } 
 }
