@@ -4,7 +4,6 @@
  * @author Mikhail Osetrov
  * @version 21.12.2021 - 22.12.2021
  */
-import java.util.Arrays;
 
 class HomeWorkFive {
     public static void main(String[] args) {
@@ -21,15 +20,15 @@ class HomeWorkFive {
 }
 
 class Employee {
-    private String full_name;
+    private String fullName;
     private String post;
     private String email;
     private String phone;
     private int salaries;
     private int age;
 
-    Employee (String full_name, String post, String email, String phone, int salaries, int age){
-        this.full_name = full_name;
+    Employee (String fullName, String post, String email, String phone, int salaries, int age){
+        this.fullName = fullName;
         this.post = post;
         this.email = email;
         this.phone = phone;
@@ -37,9 +36,9 @@ class Employee {
         this.age = age;
     }
 
-    public void setFull_name(String full_name) {
-        if (full_name != null){
-            this.full_name = full_name;
+    public void setFull_name(String fullName) {
+        if (fullName != null){
+            this.fullName = fullName;
         }
     }
 
@@ -48,6 +47,6 @@ class Employee {
     }
     
     public String toString () {
-        return "Name: " + full_name + ", " + "Post: " + post + ", " + "Email: " + email + ", " + "Phone: "  + phone + ", " + "Salaries: "  + salaries + ", " + "Age: "  + age;
+        return "Name: " + fullName + ", " + "Post: " + post + ", " + "Email: " + email + ", " + "Phone: "  + phone + ", " + "Salaries: "  + salaries + ", " + "Age: "  + age;
     }
 }
